@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лекция 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {font-family: Roboto, sans-serif;}
+
+    div {
+      width: 700px;
+      height: 450px;
+      margin-bottom: 30px;
+    }
+
+    .bg {
+      background-image: url("img/bg.jpg");
+      background-color: #15172d;
+    }
+
+    .bg1 {
+      background-image: url("img/2.jpg");
+      background-color: #15172d;
+    }
+
+    .bg2 {
+      background-image: url("img/3.png");
+      background-color: #15172d;
+    }
+
+    .bg-position {
+      background-position: top; /*25% 75%*/
+    }
+
+    .bg-size-cover {
+      background-size: cover;
+    }
+
+    .bg-size-contain {
+      background-size: contain;
+    }
+
+    .bg-attachment-fixed {
+      background-attachment: fixed;
+    }
+
+    p {font-size: 6rem;}
+
+</style>
+<body>
+<h1>
+    Лекция 6: Пример background
+</h1>
+
+<div class="bg bg-position bg-size-contain bg-size"></div>
+
+<div class="bg1 bg-position bg-size-cover">
+</div>
+
+<div class="bg2 bg-position bg-size-contain bg-attachment-fixed"></div>
+
+</body>
+</html>
