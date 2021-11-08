@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5</title>
+  <style>
+    div {
+      position: relative;
+      width: 500px;
+      height: auto;
+      margin-top: 5em;
+      padding: 10px;
+      border: solid 5px blue;
+    }
+
+    div p:first-of-type {
+      background-color: violet;
+    }
+
+    p {
+      top: -2em;
+      left: 70px;
+      width: 400px;
+      height: 70px;
+      margin: 10px;
+      padding: 1em;
+      border: solid 5px green;
+      background-color: yellow;
+    }
+
+    .last {
+      width: 400px;
+      height: auto;
+      margin: 10px;
+      padding: 1em;
+      border: none;
+      background-color: white;
+      font-size: 26px;
+    }
+
+    .pos_1 {
+      position: fixed;
+
+    }
+
+    .pos_2 {
+      position: static;
+    }
+
+    .pos_3 {
+      position: relative;
+    }
+
+    .pos_4 {
+      position: absolute;
+    }
+
+    .pos_5 {
+      position: sticky;
+      background-color: #d06f22;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>Позиционирование</h1>
+</header>
+<main>
+  <div>
+    <p></p>
+    <p class="pos_1">
+      <br>
+      position: fixed;<br>
+      top: -2em;<br>
+      left: 70px;
+    </p>
+  </div>
+
+  <div>
+    <p></p>
+    <p class="pos_2">
+      position: static;<br>
+      top: -2em;<br>
+      left: 70px;
+    </p>
+  </div>
+
+  <div>
+    <p></p>
+    <p class="pos_3">
+      position: relative;<br>
+      top: -2em;<br>
+      left: 70px;
+    </p>
+  </div>
+
+  <div>
+    <p></p>
+    <p class="pos_4">
+      position: absolute;<br>
+      top: -2em;<br>
+      left: 70px;
+    </p>
+  </div>
+
+  <div>
+    <p></p>
+    <p class="pos_5">
+      position: sticky;<br>
+      top: 0;<br>
+      left: 20px;
+    </p>
+    n this demo you can control the position property for the yellow box.
+
+    To see the effect of sticky positioning, select the position: sticky option and scroll this container.
+
+    The element will scroll along with its container, until it is at the top of the container (or reaches the offset
+    specified in top), and will then stop scrolling, so it stays visible.
+
+    The rest of this text is only supplied to make sure the container overflows, so as to enable you to scroll it and
+    see the effect.
+
+    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small
+    unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant
+    little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital
+    watches are a pretty neat idea.
+    <p class="last">Элемент позиционируется в соответствии с нормальным потоком документа, а затем смещается относительно его
+      ближайшего прокручивающего предка и содержащего блока (ближайший родительский уровень блока), включая элементы,
+      связанные с таблицей, на основе значений top, right, bottom, и left. Смещение не влияет на положение любых других
+      элементов.
+      Это значение всегда создаёт новый контекст наложения. Обратите внимание, что липкий элемент «прилипает» к его
+      ближайшему предшественнику, имеющему «механизм прокрутки» (созданный при overflow равном hidden, scroll, auto или
+      overlay), даже если тот не является ближайшим фактически прокручивающим предком. Это эффективно препятствует
+      любому «липкому» поведению (см. Github issue on W3C CSSWG).</p>
+  </div>
+</main>
+<footer>
+  <address>Ирина Коваленко, Минск, 2019-2020.</address>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
